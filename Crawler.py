@@ -27,25 +27,6 @@ def dic_names(op):
 			if op == dictionary_All_user_names[key]:
 				return key;
 
-# def make_file(date, path):
-
-# 	make_sure_path_exists(path)
-# 	with open(path, 'w') as csvfile:
-#        writer = csv.writer(csvfile)
-
-#         # name = name of the poster
-#         # post = the post contant 
-#         # father_post_num = the post is replay to 
-#         # OP   = the OP number
-#         # time = what time it was posted
-#         # points = upvoted  
-
-#         writer.writerow(('name', 'post', 'father_post_num','OP', 'time', 'points'))
-
-#         writer.writerows(
-#             (project['title'], ', '.join(project['categories']), project['price'], project['application']) for project in projects
-#         )
-
 def trade_spider(max_pages):
 	page = 0
 	while page <= max_pages:
@@ -105,15 +86,5 @@ def trade_spider(max_pages):
 			w.write(str(op_data))	
 			w.close()
 
-		
-
-
-			
 
 trade_spider(34555)
-
-
-
-
-
-# https://io.hsoub.com/go/34075  
